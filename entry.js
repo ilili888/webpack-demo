@@ -2,7 +2,6 @@ require("./css/main.less")
 
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import jquery from 'jquery'
 
 Vue.use(VueRouter)
 

@@ -1,4 +1,5 @@
 var path = require('path')
+var webpack = require('webpack');
 
 module.exports = {
   entry: './entry.js',
@@ -27,18 +28,18 @@ module.exports = {
   //   presets: ['es2015'],
   //   plugins: ['transform-runtime'],
   // }
-
-  plugins: [
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jquery: "jQuery",
-      "windows.jQuery": "jquery"
-    }),
-    new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js', Infinity)
-  ],
-  resolve: {
-    alias: {
-      'jquery': './node_modules/jquery/dist/jquery.js',
-    }
-  },
+  //
+  // plugins: [
+  //   new webpack.ProvidePlugin({
+  //     $: "jquery",
+  //     jquery: "jQuery",
+  //     "windows.jQuery": "jquery"
+  //   }),
+  //   new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js', Infinity)
+  // ],
+  // resolve: {
+  //   alias: {
+  //     // 'jquery': './node_modules/jquery/dist/jquery.js',
+  //   }
+  // },
 }
